@@ -2,94 +2,198 @@
 
 ## About
 
-This repository documents my one-year learning journey in Data Science, Machine Learning, Deep Learning, Generative AI, and Agentic AI.
+Welcome to my AI/ML learning repository.
 
-I am a B.Tech Computer Science and Engineering student, and this repository serves as a structured record of my progress, notes, practice exercises, projects, and certifications as I build expertise in Artificial Intelligence and related technologies.
+I am **Sumit Tiwari**, a B.Tech Computer Science and Engineering student, documenting my structured journey into **Data Science, Machine Learning, Deep Learning, Generative AI, and Agentic AI**.
 
-## Learning Roadmap
+This repository serves as a central hub for my learning materials, notes, practice exercises, projects, certifications, and progress tracking as I work toward becoming an AI Engineer.
 
-### Phase 1: Data Science
+---
+
+## 6-Month Learning Roadmap
+
+### Month 1 — Data Science Foundations
 
 * NumPy
 * Pandas
-* Data Visualization
+* Data Visualization (Matplotlib & Seaborn)
 * Statistics
 * SQL
 
-### Phase 2: Machine Learning
+**Projects**
+
+* Student Marks Analyzer
+* IPL Data Analysis
+* Sales Dashboard
+* Student Database Analysis
+
+---
+
+### Month 2 — Math & Machine Learning Foundations
+
+* Linear Algebra
+* Probability
+* Statistics for ML
+* Scikit-Learn Fundamentals
+
+**Project**
+
+* House Price Predictor
+
+---
+
+### Month 3 — Core Machine Learning
 
 * Linear Regression
 * Logistic Regression
 * KNN
 * Decision Trees
 * Random Forest
-* Model Evaluation
 
-### Phase 3: Deep Learning
+**Project**
 
+* Spam Classifier
+
+---
+
+### Month 4 — Advanced Machine Learning & Deep Learning
+
+* Feature Engineering
+* Hyperparameter Tuning
+* PCA
+* Ensemble Methods
 * Neural Networks
-* CNN
-* RNN
-* LSTM
+* Backpropagation
+
+---
+
+### Month 5 — Deep Learning & Computer Vision
+
 * PyTorch
+* CNNs
+* Image Processing
+* Image Classification
 
-### Phase 4: Generative AI
+**Project**
 
+* Image Classifier
+
+---
+
+### Month 6 — Generative AI, RAG & Agentic AI
+
+* NLP Fundamentals
 * Transformers
 * Embeddings
-* Vector Databases
 * Prompt Engineering
-* RAG Applications
-
-### Phase 5: Agentic AI
-
-* Tool Calling
-* Memory Systems
-* Multi-Agent Workflows
+* Vector Databases
+* RAG Systems
 * LangGraph
 * CrewAI
-
-### Phase 6: Deployment & MLOps
-
 * FastAPI
 * Docker
-* Model Deployment
-* Cloud Deployment
+
+**Projects**
+
+* Resume Analyzer
+* PDF Chatbot
+* AI Research Agent
+
+---
 
 ## Repository Structure
 
-* Data Science
-* Machine Learning
-* Deep Learning
-* Generative AI
-* Agentic AI
-* Projects
-* Notes
-* Datasets
-* Certificates
+```text
+AI-ML-Journey/
+│
+├── Data-Science/
+├── Machine-Learning/
+├── Deep-Learning/
+├── Generative-AI/
+├── Agentic-AI/
+├── Projects/
+├── Notes/
+├── Datasets/
+├── Certificates/
+└── README.md
+```
+
+---
 
 ## Goals
 
-* Build a strong AI/ML foundation.
-* Develop real-world projects.
-* Maintain consistent learning and GitHub activity.
-* Prepare for internships and entry-level AI roles.
-* Create a portfolio demonstrating practical skills.
+* Build strong foundations in AI and Machine Learning.
+* Develop industry-relevant projects.
+* Maintain consistent GitHub contributions.
+* Strengthen problem-solving and analytical skills.
+* Prepare for internships and AI-related roles.
+* Build a portfolio demonstrating practical experience.
 
-## Progress
+---
+
+## Progress Tracker
+
+### Data Science
 
 * [ ] NumPy
 * [ ] Pandas
 * [ ] Data Visualization
 * [ ] Statistics
 * [ ] SQL
-* [ ] Machine Learning
-* [ ] Deep Learning
-* [ ] Generative AI
-* [ ] Agentic AI
-* [ ] MLOps
 
-## Author
+### Machine Learning
 
-Sumit Tiwari
-B.Tech CSE Student
+* [ ] Linear Regression
+* [ ] Logistic Regression
+* [ ] KNN
+* [ ] Decision Trees
+* [ ] Random Forest
+
+### Deep Learning
+
+* [ ] Neural Networks
+* [ ] PyTorch
+* [ ] CNNs
+
+### Generative AI
+
+* [ ] Transformers
+* [ ] Embeddings
+* [ ] Prompt Engineering
+* [ ] RAG Systems
+
+### Agentic AI
+
+* [ ] LangGraph
+* [ ] CrewAI
+* [ ] AI Agents
+
+### Deployment
+
+* [ ] FastAPI
+* [ ] Docker
+* [ ] Deployment
+
+---
+
+## Featured Projects
+
+* Student Marks Analyzer
+* IPL Data Analysis
+* Sales Dashboard
+* House Price Predictor
+* Spam Classifier
+* Image Classifier
+* Resume Analyzer
+* PDF Chatbot
+* AI Research Agent
+
+---
+
+## Connect With Me
+
+**Sumit Tiwari**
+
+* B.Tech Computer Science & Engineering
+* Aspiring AI Engineer
+* GitHub: https://github.com/tiwarisumit95225
