@@ -22,26 +22,31 @@ NumPy (Numerical Python) is the fundamental library for numerical computing in P
 ### Intermediate
 
 * [x] Initializing Different Arrays
-* [ ] Mathematical Operations
-* [ ] Statistics Functions
-* [ ] Reshaping Arrays
-* [ ] Broadcasting
+* [x] Mathematical Operations
+* [x] Statistics Functions
+* [x] Reshaping Arrays
+* [x] Broadcasting
 
 ### Advanced
 
-* [ ] Linear Algebra Basics
-* [ ] Random Number Generation
+* [x] Linear Algebra Basics
+* [x] Random Number Generation
 
 ## Practice Files
 
-| File       | Description                                                                               |
-| ---------- | ----------------------------------------------------------------------------------------- |
-| day1.ipynb | Arrays, indexing, rows, columns, and element manipulation, Initializing Different Arrays  |
-
+| File | Description |
+|------|-------------|
+| `day1.ipynb` | Array creation, indexing, slicing, array manipulation, and array initialization |
+| `day2.ipynb` | Mathematical operations, statistics, reshaping, broadcasting, linear algebra, and random number generation |
 ## Mini Project
 
 * [ ] Student Marks Analyzer
 
 ## Progress
 
-Current Status: **Day 1 Completed**
+- ✅ Day 1 Completed
+- ✅ Day 2 Completed (NumPy Fundamentals)
+
+**Status:** NumPy Learning Completed
+
+**Next:** Practice NumPy problems → Student Marks Analyzer → Pandas
