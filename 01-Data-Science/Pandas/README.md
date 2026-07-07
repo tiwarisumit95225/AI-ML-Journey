@@ -1,60 +1,91 @@
 # Pandas
 
 ## Overview
+
 Pandas is a powerful Python library used for data manipulation and analysis. It provides efficient data structures like **Series** and **DataFrame** for handling structured data.
 
 ---
 
-## Topics Covered
+# Topics Covered
 
 ### 1. Introduction to Pandas
-- What is Pandas?
-- Why use Pandas?
-- Installing and importing Pandas
-- Creating a DataFrame
-- Understanding rows, columns, and indexes
+
+* What is Pandas?
+* Why use Pandas?
+* Installing and importing Pandas
+* Creating a DataFrame
+* Understanding rows, columns, and indexes
 
 ### 2. DataFrame Basics
-- Creating DataFrames from dictionaries
-- Viewing DataFrames
-- Understanding shape, rows, and columns
-- Column names and indexes
+
+* Creating DataFrames from dictionaries
+* Viewing DataFrames
+* Understanding shape, rows, and columns
+* Column names and indexes
 
 ### 3. Loading DataFrames
-- Reading CSV files using `read_csv()`
-- Reading Excel files using `read_excel()`
-- Reading JSON files using `read_json()`
-- Reading Parquet files using `read_parquet()`
-- Understanding different file formats
+
+* Reading CSV files using `read_csv()`
+* Reading Excel files using `read_excel()`
+* Reading JSON files using `read_json()`
+* Reading Parquet files using `read_parquet()`
+* Understanding different file formats
 
 ### 4. DataFrame Column Operations
-- Adding new columns
-- Creating columns from existing columns
-- Modifying existing columns
-- Removing columns using `drop()`
-- Using `inplace=True` for permanent changes
+
+* Adding new columns
+* Creating columns from existing columns
+* Modifying existing columns
+* Removing columns using `drop()`
+* Removing columns using `del`
+* Using `inplace=True` for permanent changes
 
 ### 5. Accessing Data
-- Selecting single and multiple columns
-- Accessing rows using `loc`
-- Accessing rows using `iloc`
-- Accessing specific cell values
-- Difference between `loc` and `iloc`
+
+* Selecting single and multiple columns
+* Accessing rows using `loc`
+* Accessing rows using `iloc`
+* Accessing specific cell values
+* Difference between `loc` and `iloc`
 
 ### 6. Filtering Data
-- Filtering with single conditions
-- Filtering with multiple conditions
-- Using logical operators (`&`, `|`, `~`)
-- Filtering with `isin()`
-- Filtering with `between()`
-- Filtering text using `str.contains()`
+
+* Filtering with single conditions
+* Filtering with multiple conditions
+* Using logical operators (`&`, `|`, `~`)
+* Filtering with `isin()`
+* Filtering with `between()`
+* Filtering text using `str.contains()`
+
+### 7. Handling Missing Values
+
+* Detecting missing values with `isnull()` and `isna()`
+* Counting missing values using `isnull().sum()`
+* Removing missing values with `dropna()`
+* Filling missing values using `fillna()`
+* Understanding `NaN` values
+
+### 8. Merging DataFrames
+
+* Combining DataFrames using `pd.merge()`
+* Merge types:
+
+  * `inner`
+  * `left`
+  * `right`
+  * `outer`
+* Merging on common columns
+
+### 9. Concatenating DataFrames
+
+* Combining DataFrames using `pd.concat()`
+* Vertical concatenation (`axis=0`)
+* Horizontal concatenation (`axis=1`)
+* Understanding index behavior during concatenation
 
 ---
 
-
-## Key Functions Learned
-
-## Key Functions Learned
+# Key Functions Learned
 
 ```python
 import pandas as pd
@@ -74,18 +105,31 @@ df.iloc[]
 
 # DataFrame Operations
 df.drop()
+del df["column"]
+df.apply()
 
 # Filtering
 df.isin()
 df.between()
 df["column"].str.contains()
+
+# Missing Values
+df.isnull()
+df.isna()
+df.notnull()
+df.dropna()
+df.fillna()
+
+# Combining DataFrames
+pd.merge()
+pd.concat()
 ```
 
 ---
 
-## Folder Structure
+# Folder Structure
 
-```
+```text
 Pandas/
 │
 ├── day1.ipynb
@@ -96,32 +140,29 @@ Pandas/
 
 ---
 
-## Status
+# Status
 
-✅ Introduction to Pandas Completed
-
-✅ DataFrame Basics Completed
-
-✅ Loading DataFrames Completed
-
-✅ DataFrame Column Operations Completed
-
-✅ Accessing Data with `loc` and `iloc` Completed
-
-✅ Filtering Data Completed
+* ✅ Introduction to Pandas Completed
+* ✅ DataFrame Basics Completed
+* ✅ Loading DataFrames Completed
+* ✅ DataFrame Column Operations Completed
+* ✅ Accessing Data with `loc` and `iloc` Completed
+* ✅ Filtering Data Completed
+* ✅ Handling Missing Values Completed
+* ✅ Merging DataFrames Completed
+* ✅ Concatenating DataFrames Completed
 
 ---
 
+# Next Topics
 
-Next Topics
-
-- Sorting Data
-- Updating Values
-- Handling Missing Values
-- GroupBy Operations
-- Aggregation Functions
-- Merging DataFrames
-- Joining DataFrames
-- Concatenating DataFrames
-- Pivot Tables
-- Exporting Data
+* Sorting Data
+* Updating Values
+* GroupBy Operations
+* Aggregation Functions
+* Joining DataFrames
+* Pivot Tables
+* Exporting Data
+* Working with Dates and Time
+* Duplicate Data Handling
+* Apply, Map and Replace Functions
