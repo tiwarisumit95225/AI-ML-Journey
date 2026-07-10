@@ -83,6 +83,40 @@ Pandas is a powerful Python library used for data manipulation and analysis. It 
 * Horizontal concatenation (`axis=1`)
 * Understanding index behavior during concatenation
 
+### 10. Advanced DataFrame Functions
+
+* Applying custom functions with `apply()`
+* Transforming data using `map()`
+* Replacing values using `replace()`
+* Renaming columns with `rename()`
+* Changing data types using `astype()`
+* Detecting and removing duplicate rows
+* String operations using `.str`
+* Shifting data using `shift()`
+* Ranking values using `rank()`
+* Computing cumulative sums with `cumsum()`
+* Rolling window calculations using `rolling()`
+* Resetting indexes with `reset_index()`
+
+### 11. Aggregate Data
+
+* Understanding aggregation
+* Using aggregate functions:
+
+  * `sum()`
+  * `mean()`
+  * `median()`
+  * `min()`
+  * `max()`
+  * `count()`
+  * `std()`
+* Statistical summary with `describe()`
+* Grouping data using `groupby()`
+* Multiple aggregations with `agg()`
+* Counting categories with `value_counts()`
+* Sorting aggregated data
+* Creating pivot tables with `pivot_table()`
+
 ---
 
 # Key Functions Learned
@@ -107,6 +141,10 @@ df.iloc[]
 df.drop()
 del df["column"]
 df.apply()
+df.map()
+df.replace()
+df.rename()
+df.astype()
 
 # Filtering
 df.isin()
@@ -123,6 +161,27 @@ df.fillna()
 # Combining DataFrames
 pd.merge()
 pd.concat()
+
+# Advanced Functions
+df.shift()
+df.rank()
+df.cumsum()
+df.rolling()
+df.reset_index()
+
+# Aggregation
+df.sum()
+df.mean()
+df.median()
+df.min()
+df.max()
+df.count()
+df.std()
+df.describe()
+df.groupby()
+df.agg()
+df.value_counts()
+pd.pivot_table()
 ```
 
 ---
@@ -134,6 +193,8 @@ Pandas/
 │
 ├── day1.ipynb
 ├── day2.ipynb
+├── day3.ipynb
+├── day4.ipynb
 ├── README.md
 └── data/
 ```
@@ -151,18 +212,19 @@ Pandas/
 * ✅ Handling Missing Values Completed
 * ✅ Merging DataFrames Completed
 * ✅ Concatenating DataFrames Completed
+* ✅ Advanced DataFrame Functions Completed
+* ✅ Aggregate Data Completed
 
 ---
 
 # Next Topics
 
 * Sorting Data
-* Updating Values
-* GroupBy Operations
-* Aggregation Functions
+* MultiIndex
+* Time Series Analysis
+* Date & Time Operations
 * Joining DataFrames
-* Pivot Tables
-* Exporting Data
-* Working with Dates and Time
-* Duplicate Data Handling
-* Apply, Map and Replace Functions
+* Exporting Data (`to_csv()`, `to_excel()`, `to_json()`)
+* Visualization with Pandas
+* Performance Optimization
+* Mini Projects with Pandas
