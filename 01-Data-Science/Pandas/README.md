@@ -2,7 +2,7 @@
 
 ## Overview
 
-Pandas is a powerful Python library used for data manipulation and analysis. It provides efficient data structures like **Series** and **DataFrame** for handling structured data.
+Pandas is a powerful Python library used for data manipulation and analysis. It provides efficient data structures like **Series** and **DataFrame** for handling structured data. It is widely used in Data Science, Machine Learning, Data Analysis, and AI for cleaning, transforming, analyzing, and preparing datasets.
 
 ---
 
@@ -13,7 +13,7 @@ Pandas is a powerful Python library used for data manipulation and analysis. It 
 * What is Pandas?
 * Why use Pandas?
 * Installing and importing Pandas
-* Creating a DataFrame
+* Creating Series and DataFrames
 * Understanding rows, columns, and indexes
 
 ### 2. DataFrame Basics
@@ -22,100 +22,124 @@ Pandas is a powerful Python library used for data manipulation and analysis. It 
 * Viewing DataFrames
 * Understanding shape, rows, and columns
 * Column names and indexes
+* DataFrame information (`info()`)
+* Statistical summary (`describe()`)
 
-### 3. Loading DataFrames
+### 3. Loading Data
 
-* Reading CSV files using `read_csv()`
-* Reading Excel files using `read_excel()`
-* Reading JSON files using `read_json()`
-* Reading Parquet files using `read_parquet()`
-* Understanding different file formats
+* Reading CSV files (`read_csv()`)
+* Reading Excel files (`read_excel()`)
+* Reading JSON files (`read_json()`)
+* Reading Parquet files (`read_parquet()`)
 
-### 4. DataFrame Column Operations
+### 4. Exploring Data
 
-* Adding new columns
-* Creating columns from existing columns
-* Modifying existing columns
-* Removing columns using `drop()`
-* Removing columns using `del`
-* Using `inplace=True` for permanent changes
+* `head()`
+* `tail()`
+* `sample()`
+* `shape`
+* `columns`
+* `index`
 
 ### 5. Accessing Data
 
 * Selecting single and multiple columns
 * Accessing rows using `loc`
 * Accessing rows using `iloc`
-* Accessing specific cell values
+* Accessing single values using `at`
+* Accessing single values using `iat`
 * Difference between `loc` and `iloc`
 
-### 6. Filtering Data
+### 6. Sorting & Iterating
 
-* Filtering with single conditions
-* Filtering with multiple conditions
-* Using logical operators (`&`, `|`, `~`)
-* Filtering with `isin()`
-* Filtering with `between()`
-* Filtering text using `str.contains()`
+* Sorting using `sort_values()`
+* Ascending and descending order
+* Iterating rows using `iterrows()`
 
-### 7. Handling Missing Values
+### 7. Filtering Data
 
-* Detecting missing values with `isnull()` and `isna()`
-* Counting missing values using `isnull().sum()`
-* Removing missing values with `dropna()`
-* Filling missing values using `fillna()`
-* Understanding `NaN` values
+* Single and multiple conditions
+* Logical operators (`&`, `|`, `~`)
+* `isin()`
+* `between()`
+* String filtering using `str.contains()`
+* Regular Expressions (Regex)
+* Querying data using `query()`
 
-### 8. Merging DataFrames
+### 8. DataFrame Column Operations
 
-* Combining DataFrames using `pd.merge()`
+* Adding new columns
+* Creating columns from existing columns
+* Mathematical operations
+* Conditional columns
+* Renaming columns
+* Removing columns (`drop()`, `del`)
+* Using `inplace=True`
+
+### 9. String & Datetime Operations
+
+* String methods using `.str`
+* Datetime conversion using `pd.to_datetime()`
+* Working with date and time columns
+
+### 10. Saving Data
+
+* `to_csv()`
+* `to_excel()`
+* `to_json()`
+* `to_parquet()`
+
+### 11. Handling Missing Values
+
+* `isnull()`
+* `isna()`
+* `notna()`
+* `dropna()`
+* `fillna()`
+* `interpolate()`
+
+### 12. Merging & Concatenating
+
+* `pd.merge()`
 * Merge types:
 
-  * `inner`
-  * `left`
-  * `right`
-  * `outer`
-* Merging on common columns
+  * Inner Join
+  * Left Join
+  * Right Join
+  * Outer Join
+* `pd.concat()`
+* Vertical (`axis=0`) and Horizontal (`axis=1`) concatenation
 
-### 9. Concatenating DataFrames
+### 13. Advanced DataFrame Functions
 
-* Combining DataFrames using `pd.concat()`
-* Vertical concatenation (`axis=0`)
-* Horizontal concatenation (`axis=1`)
-* Understanding index behavior during concatenation
+* `apply()`
+* Lambda functions
+* Custom functions
+* `map()`
+* `replace()`
+* `rename()`
+* `astype()`
+* Duplicate detection and removal
+* `shift()`
+* `rank()`
+* `cumsum()`
+* `rolling()`
+* `reset_index()`
 
-### 10. Advanced DataFrame Functions
+### 14. Aggregation & Analysis
 
-* Applying custom functions with `apply()`
-* Transforming data using `map()`
-* Replacing values using `replace()`
-* Renaming columns with `rename()`
-* Changing data types using `astype()`
-* Detecting and removing duplicate rows
-* String operations using `.str`
-* Shifting data using `shift()`
-* Ranking values using `rank()`
-* Computing cumulative sums with `cumsum()`
-* Rolling window calculations using `rolling()`
-* Resetting indexes with `reset_index()`
-
-### 11. Aggregate Data
-
-* Understanding aggregation
-* Using aggregate functions:
-
-  * `sum()`
-  * `mean()`
-  * `median()`
-  * `min()`
-  * `max()`
-  * `count()`
-  * `std()`
-* Statistical summary with `describe()`
-* Grouping data using `groupby()`
-* Multiple aggregations with `agg()`
-* Counting categories with `value_counts()`
-* Sorting aggregated data
-* Creating pivot tables with `pivot_table()`
+* `sum()`
+* `mean()`
+* `median()`
+* `min()`
+* `max()`
+* `count()`
+* `std()`
+* `describe()`
+* `value_counts()`
+* `groupby()`
+* `agg()`
+* Pivot Tables (`pivot_table()`)
 
 ---
 
@@ -133,34 +157,51 @@ pd.read_excel()
 pd.read_json()
 pd.read_parquet()
 
+# Exploring Data
+df.head()
+df.tail()
+df.sample()
+
 # Accessing Data
 df.loc[]
 df.iloc[]
+df.at[]
+df.iat[]
 
-# DataFrame Operations
-df.drop()
-del df["column"]
-df.apply()
-df.map()
-df.replace()
-df.rename()
-df.astype()
+# Sorting
+df.sort_values()
 
 # Filtering
+df.query()
 df.isin()
 df.between()
 df["column"].str.contains()
 
+# DataFrame Operations
+df.drop()
+df.rename()
+df.apply()
+df.map()
+df.replace()
+df.astype()
+
 # Missing Values
 df.isnull()
 df.isna()
-df.notnull()
+df.notna()
 df.dropna()
 df.fillna()
+df.interpolate()
 
-# Combining DataFrames
+# Combining Data
 pd.merge()
 pd.concat()
+
+# Saving Data
+df.to_csv()
+df.to_excel()
+df.to_json()
+df.to_parquet()
 
 # Advanced Functions
 df.shift()
@@ -170,14 +211,6 @@ df.rolling()
 df.reset_index()
 
 # Aggregation
-df.sum()
-df.mean()
-df.median()
-df.min()
-df.max()
-df.count()
-df.std()
-df.describe()
 df.groupby()
 df.agg()
 df.value_counts()
@@ -205,26 +238,29 @@ Pandas/
 
 * ✅ Introduction to Pandas Completed
 * ✅ DataFrame Basics Completed
-* ✅ Loading DataFrames Completed
-* ✅ DataFrame Column Operations Completed
-* ✅ Accessing Data with `loc` and `iloc` Completed
+* ✅ Loading Data Completed
+* ✅ Exploring Data Completed
+* ✅ Accessing Data Completed
+* ✅ Sorting & Iterating Completed
 * ✅ Filtering Data Completed
+* ✅ Column Operations Completed
+* ✅ String & Datetime Operations Completed
+* ✅ Saving Data Completed
 * ✅ Handling Missing Values Completed
-* ✅ Merging DataFrames Completed
-* ✅ Concatenating DataFrames Completed
+* ✅ Merging & Concatenating Completed
 * ✅ Advanced DataFrame Functions Completed
-* ✅ Aggregate Data Completed
+* ✅ Aggregation & Analysis Completed
+
+**🎉 Pandas Learning Completed**
 
 ---
 
-# Next Topics
+# Next Steps
 
-* Sorting Data
-* MultiIndex
-* Time Series Analysis
-* Date & Time Operations
-* Joining DataFrames
-* Exporting Data (`to_csv()`, `to_excel()`, `to_json()`)
-* Visualization with Pandas
-* Performance Optimization
-* Mini Projects with Pandas
+* Mini Projects
+* Real-world Dataset Analysis
+* Kaggle Practice
+* Matplotlib
+* Seaborn
+* Statistics
+* Machine Learning Data Preprocessing
