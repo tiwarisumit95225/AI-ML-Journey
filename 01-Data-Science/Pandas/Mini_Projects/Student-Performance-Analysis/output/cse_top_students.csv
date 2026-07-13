@@ -1,0 +1,3 @@
+Student_ID,Name,Gender,Age,Branch,Semester,Math,Physics,Chemistry,English,Attendance,City,Total,Average,Percentage,Grade,Result
+1028,Panini Merchant,Female,22,CSE,4,56,100,95,92,90,Lucknow,343,85.75,85.75,A,Pass
+1169,Harinakshi Kala,Male,19,CSE,4,92,88,71,95,51,Indore,346,86.5,86.5,A,Pass

@@ -1,0 +1,3 @@
+Student_ID,Name,Gender,Age,Branch,Semester,Math,Physics,Chemistry,English,Attendance,City,Total,Average,Percentage,Grade,Result
+1045,Ikbal Das,Male,22,CSE,5,38,32,44,32,53,Patna,146,36.5,36.5,F,Fail
+1143,Fariq Divan,Male,22,IT,8,31,44,43,40,57,Bhopal,158,39.5,39.5,F,Fail

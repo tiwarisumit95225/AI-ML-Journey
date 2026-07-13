@@ -1,0 +1,11 @@
+Student_ID,Name,Gender,Age,Branch,Semester,Math,Physics,Chemistry,English,Attendance,City,Total,Average,Percentage,Grade,Result
+1045,Ikbal Das,Male,22,CSE,5,38,32,44,32,53,Patna,146,36.5,36.5,F,Fail
+1143,Fariq Divan,Male,22,IT,8,31,44,43,40,57,Bhopal,158,39.5,39.5,F,Fail
+1154,Janani Chana,Male,18,CSE,3,39,30,72,31,59,Pune,172,43.0,43.0,F,Pass
+1018,Onveer Kamdar,Female,22,IT,6,79,30,34,30,65,Delhi,173,43.25,43.25,F,Pass
+1008,Nikita Shan,Male,21,CSE,7,46,49,40,40,60,Mumbai,175,43.75,43.75,F,Pass
+1111,Ishwar Manne,Male,22,CSE,2,30,43,34,71,85,Delhi,178,44.5,44.5,F,Pass
+1167,Utkarsh Goswami,Male,22,EC,2,74,34,41,30,70,Pune,179,44.75,44.75,F,Pass
+1007,Banjeet Bhagat,Male,20,EC,4,34,41,46,63,90,Jaipur,184,46.0,46.0,F,Pass
+1032,Jason Krish,Male,24,IT,7,55,43,42,45,98,Mumbai,185,46.25,46.25,F,Pass
+1033,Panini Shukla,Female,20,EC,1,60,51,36,42,61,Pune,189,47.25,47.25,F,Pass

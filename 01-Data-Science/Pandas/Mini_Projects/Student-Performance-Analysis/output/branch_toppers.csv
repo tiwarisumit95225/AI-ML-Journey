@@ -1,0 +1,5 @@
+Student_ID,Name,Gender,Age,Branch,Semester,Math,Physics,Chemistry,English,Attendance,City,Total,Average,Percentage,Grade,Result
+1169,Harinakshi Kala,Male,19,CSE,4,92,88,71,95,51,Indore,346,86.5,86.5,A,Pass
+1106,Manan Sankar,Male,21,EC,4,85,95,100,96,85,Pune,376,94.0,94.0,A+,Pass
+1108,Gagan Gupta,Female,20,IT,3,74,96,89,87,85,Mumbai,346,86.5,86.5,A,Pass
+1074,Bhavna Bhardwaj,Male,18,ME,3,93,92,96,38,76,Nagpur,319,79.75,79.75,B,Pass
