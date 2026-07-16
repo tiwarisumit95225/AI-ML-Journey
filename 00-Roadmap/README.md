@@ -135,8 +135,8 @@ AI-ML-Journey/
 
 ### Data Science
 
-* [ ] NumPy
-* [ ] Pandas
+* [x] NumPy
+* [x] Pandas
 * [ ] Data Visualization
 * [ ] Statistics
 * [ ] SQL
