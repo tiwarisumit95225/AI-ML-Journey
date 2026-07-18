@@ -51,6 +51,7 @@ Matplotlib is one of the most popular Python libraries for data visualization. I
 - Marker size
 - Marker edge color
 - Shorthand format string (`fmt`)
+- Font customization using `fontdict`
 
 ---
 
@@ -59,7 +60,7 @@ Matplotlib is one of the most popular Python libraries for data visualization. I
 - Graph title
 - X-axis label
 - Y-axis label
-- Custom fonts using `fontdict`
+- Custom title formatting
 
 ---
 
@@ -67,6 +68,8 @@ Matplotlib is one of the most popular Python libraries for data visualization. I
 
 - `plt.xticks()`
 - `plt.yticks()`
+- Custom tick intervals
+- Displaying selected axis values
 
 ---
 
@@ -76,9 +79,19 @@ Matplotlib is one of the most popular Python libraries for data visualization. I
 
 ---
 
+## Bar Charts
+
+- Creating bar charts using `plt.bar()`
+- Customizing bar appearance
+- Applying hatch (pattern) styles using `set_hatch()`
+- Assigning hatch patterns dynamically using loops
+
+---
+
 ## Saving and Displaying Graphs
 
 - Saving graphs using `plt.savefig()`
+- High-quality image export using `dpi`
 - Displaying graphs using `plt.show()`
 
 ---
@@ -89,6 +102,7 @@ Matplotlib is one of the most popular Python libraries for data visualization. I
 |----------|-------------|
 | `plt.figure()` | Creates a new figure |
 | `plt.plot()` | Creates a line plot |
+| `plt.bar()` | Creates a bar chart |
 | `plt.title()` | Adds a title |
 | `plt.xlabel()` | Sets the X-axis label |
 | `plt.ylabel()` | Sets the Y-axis label |
@@ -97,6 +111,29 @@ Matplotlib is one of the most popular Python libraries for data visualization. I
 | `plt.legend()` | Displays graph legend |
 | `plt.savefig()` | Saves the graph as an image |
 | `plt.show()` | Displays the graph |
+| `BarContainer.set_hatch()` | Adds hatch patterns to bars |
+
+---
+
+# Mini Projects / Practice
+
+### 📈 Gas Price Analysis
+
+- Loaded CSV data using Pandas
+- Compared gas prices of:
+  - USA
+  - Canada
+  - South Korea
+  - Australia
+- Customized graph title, labels, legends, and X-axis ticks
+- Exported the graph as a high-quality PNG (`dpi=300`)
+
+### 📊 Bar Chart Customization
+
+- Created a bar chart
+- Applied hatch patterns (`/`, `o`, `*`)
+- Used loops to assign patterns dynamically
+- Learned how hatch improves graph readability
 
 ---
 
@@ -143,9 +180,10 @@ Matplotlib/
 │
 ├── README.md
 ├── basics.ipynb
+├── datasets/
 ├── images/
-│   └── basicgraph.png
-└── datasets/
+│   ├── basicgraph.png
+│   └── gas_price_figure.png
 ```
 
 ---
@@ -155,19 +193,24 @@ Matplotlib/
 - ✅ Introduction to Data Visualization
 - ✅ Introduction to Matplotlib
 - ✅ Creating Figures
-- ✅ Line Plots
-- ✅ Graph Customization
+- ✅ Figure Size & Resolution
+- ✅ Basic Line Plots
 - ✅ Multiple Line Plots
+- ✅ Graph Customization
+- ✅ Colors & Line Styles
+- ✅ Markers
 - ✅ Titles and Labels
+- ✅ Font Customization
 - ✅ Axis Ticks
 - ✅ Legends
+- ✅ Bar Charts
+- ✅ Hatch Patterns
 - ✅ Saving Figures
 
 ---
 
 # Upcoming Topics
 
-- Bar Charts
 - Scatter Plots
 - Histograms
 - Pie Charts
